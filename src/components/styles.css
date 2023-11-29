@@ -1,0 +1,61 @@
+.test {
+    text-decoration: none;
+}
+
+.auctions-singleauc {
+    margin-top: 20px;
+    display: block;
+    padding: 10px 10px 10px 10px;
+    width: 80vw;
+    border-style: solid;
+    color: black;
+}
+
+/* change style of image and name etc. */ 
+.auctions-singleauc__information {
+    display: inline-flex;
+    text-align: left;
+}
+
+.auctions-singleauc__information-elements {
+    padding-left: 10px;
+}
+
+.auctions-singleauc__information-image {
+    width: 100px;
+}
+
+.auctions-singleauc__information-element {
+    font-weight: normal;
+    margin: 0 0 0 0;
+}
+
+/* style price and time below the information */
+.auctions-singleauc__pricetime {
+    width: 100%;
+    text-align: left;
+}
+
+.auctions-singleauc__pricetime-item {
+    margin: 0;
+    padding-top: 5px;
+}
+
+/* make sure that once screen gets bigger, price and time go to the right of image and name rather than below */
+@media only screen and (min-width: 800px) {
+    
+    .auctions-singleauc__information-image {
+        width: 100px;
+    }
+    
+    .auctions-singleauc__information {
+        height: 100%;
+        width: auto;
+    }
+
+    .auctions-singleauc__pricetime {
+        width: auto;
+        float: right;
+        text-align: right;
+    }
+}

@@ -1,0 +1,13 @@
+Finish AuctionCreation page:
+- show unauthorized when not logged in
+
+Add active check on if token is still valid
+- Make unauthorized pages unauthorized
+
+Make tests :DDDDD!!!!! :CCCCCC
+
+Update security assignment
+
+Launch backend on debian host
+Launch frontend on debian host
+

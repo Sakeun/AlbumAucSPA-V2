@@ -1,0 +1,32 @@
+.album-details {
+    margin-top: 4em;
+    text-align: center;
+}
+
+.album-details__information-image {
+    width: 60%;
+}
+
+.album-details__information-element {
+    margin: 0;
+}
+
+.hidden {
+    visibility: none;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.modal {
+    position: absolute;
+    z-index: 1000;
+    background-color: green;
+    max-width: 60%;
+}
+
+.edit-auc {
+    text-align: center;
+    margin-top: 4em;
+}

@@ -1,0 +1,123 @@
+:root {
+    --main-bg-color: #04C600;
+}
+
+.header-image__img {
+    position: absolute;
+    left: 45%;
+    padding-top: 0.5em;
+    width: 4em;
+}
+
+.header {
+    box-sizing: border-box;
+}
+
+.menu-hr {
+    margin: 0;
+    border: 0.5px solid #03AB00;
+    color: #03AB00;
+}
+
+nav {
+    width: 100vw;
+    height: 4em;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+}
+
+.burger-menu {
+    height: 100%;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.burger-bar {
+    width: 3em;
+    height: 0.4em;
+    background-color: white;
+    border-radius: 0.5em;
+}
+
+.menu {
+    width: 100vw;
+    background-color: green;
+    z-index: 1;
+}
+
+.header-link {
+    padding: 10px 0px 10px 10px;
+    font-size: 25px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inherit;
+}
+
+.headermain {
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+}
+
+.burger-bar.clicked:nth-child(1) {
+    transform: rotate(45deg) translate(9px, 8px);
+    transition: none;
+}
+
+.burger-bar.clicked:nth-child(2) {
+    transform: scale(0.1);
+    transition: none;
+}
+
+.burger-bar.clicked:nth-child(3) {
+    transform: rotate(135deg) translate(-10px, 10px);
+    transition: none;
+}
+
+@media only screen and (min-width: 800px) {
+    .burger-menu {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        background-color: var(--main-bg-color);
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        height: 4em;
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+
+    .menu-hr {
+        border: none;
+        visibility: hidden;
+    }
+
+    .header-link {
+        padding-top: 15px;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+
+    .header-image__img {
+        left: 0%;
+        padding-left: 0.5em;
+        z-index: 3;
+    }
+}
